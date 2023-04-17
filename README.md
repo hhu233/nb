@@ -30,3 +30,6 @@ PS:请在bot文件夹输入以下命令
     3)code在线
     
         nb plugin install nonebot-plugin-code
+        
+       
+3.在src里的插件部分功能是有针对性的，请记事本打开，在注释处根据注释填写
