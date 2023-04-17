@@ -1,5 +1,7 @@
 # **小丛雨** for linux
 
+![丛雨](https://github.com/hhu233/nb/blob/main/a.jpg)
+
 ## How to start
 
 1. fork本项目或自己部署好，对应plugin下载 .
