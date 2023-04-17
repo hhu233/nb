@@ -6,7 +6,7 @@
 
 1. fork本项目或自己部署好，对应plugin下载 .
 2. 先在'config.yml'文件编辑好后，使用bat脚本运行gocq . 
-3. 在文件目录使用 `nb run` .
+3. 此时在'.env.prod'编写正确，即可文件目录使用 `nb run` .
 4. 发送'丛雨帮助'可以知道功能（但是肯定不是全部哦~杂鱼~❤）
 ## Documentation
 
