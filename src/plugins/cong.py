@@ -15,7 +15,7 @@ from nonebot_plugin_apscheduler import scheduler
 import random
 from nonebot import get_driver
 
-read_group_list={254551403,456430003}
+read_group_list={}           #可指定群
 @scheduler.scheduled_job("cron", hour="23",misfire_grace_time=10)
 async def hour1():
     message=MessageSegment.text("群提醒睡觉小丛雨，提醒你23点到了，再不睡觉就会被恶鬼捉走哦。什...什么，我才不会怕呢！(丛雨也要睡觉了哦）")
@@ -70,7 +70,7 @@ async def s1(event:GroupMessageEvent):
 def _check(event: PokeNotifyEvent):
     return event.target_id==event.self_id
 
-agree_list=[1371006609]
+agree_list=[] # 请改为自己的超级用户
 poko=on_notice(rule=_check)
 @poko.handle()
 async def _poko(event: PokeNotifyEvent):
@@ -306,19 +306,7 @@ word=on_command("肚肚饿饿")
 async def se():
     await  word.finish(MessageSegment.image("file:///nb/data/images/v50.jpg"))
 
-def _ch(event:GroupMessageEvent):
-    return event.group_id==615488207
 
-tyfile=("file:///nb/data/images/tianyi1.jpg",
-           "file:///nb/data/images/tianyi2.jpg",
-            "file:///nb/data/images/tianyi3.gif",
-            "file:///nb/data/images/tianyi4.jpg")
-word=on_command("天一小天使",rule=_ch)
-@word.handle()
-async def _se():
-    t=random.randint(0,3)
-    m=str(tyfile[t])
-    await word.send(MessageSegment.image(m))
 
 word=on_command("不好评价")
 @word.handle()
@@ -703,29 +691,6 @@ async def _():
          "你在盯着什么地方看！变态萝莉控！"])
     await ae3.finish(Message(b))
 
-e=on_command("查询疫情")
-@e.handle()
-async def _(foo:Message=CommandArg()):
-            a = str(foo).split(",")
-            url="https://interface.sina.cn/news/ncp/data.d.json?mod=risk_level&areaname=" + str(f'{a[0]}|{a[1]}|')
-            print(url)
-            b = requests.get(url,
-                             headers={
-                                 "user-agent": "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Safari/537.36"})
-            b=b.json()
-            if b["data"]["highNum"] != 0:
-               c = ["!——查询的高风险地区————"]
-               for i in range(len(b["data"]["high"])):
-                   c.append(str(i + 1) + str(f'.{b["data"]["high"][i]["county"]}'))
-               hn = b["data"]["highNum"]
-               c= ''.join(c)
-               s=MessageSegment.text(c)+MessageSegment.text("\n")+MessageSegment.text(f"高风险地区数：{hn}")
-
-               await e.send(Message(s))
-
-            else:
-
-                    await e.send(Message(f"{a[0]}{a[1]}没有高风险哦"))
 
 
 dfile=("file:////nb/data/voices/dinggong/1.wav",
