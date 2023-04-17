@@ -33,9 +33,11 @@ PS:请在bot文件夹输入以下命令
         nb plugin install nonebot-plugin-code
         
         
-## issue
-
-想提问的话尽量在qq上问（1371006609），也可以看看关于[我的博客](https://www.nekomiacg.top)
         
        
 3.在src里的插件部分功能是有针对性的，请记事本打开，在注释处根据注释填写
+
+
+## issue
+
+想提问的话尽量在qq上问（1371006609），也可以看看关于[我的博客](https://www.nekomiacg.top)
