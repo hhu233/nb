@@ -11,7 +11,8 @@
 ## Documentation
 
 See [Docs](https://v2.nonebot.dev/)<br>
-请把该项目置于根目录
+请把该项目置于根目录<br>
+想改成win下也可以，但得在插件的每个路径都得改一下
 
 ## dependency<br>
 
