@@ -1,6 +1,6 @@
 # **小丛雨** for linux
 
-![丛雨](https://github.com/hhu233/nb/blob/main/a.jpg)
+![丛雨](https://github.com/hhu233/nb/blob/main/data/images/fabing.jpg)
 
 ## How to start
 
