@@ -18,3 +18,4 @@ poetry>=1.1.13
 requests>=2.30.0
 nonebot-adapter-onebot
 poetry_core>=1.0.0
+nonebot2[fastapi]
