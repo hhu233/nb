@@ -17,3 +17,4 @@ playwright==1.22.0
 poetry>=1.1.13
 requests>=2.30.0
 nonebot-adapter-onebot
+poetry_core>=1.0.0
