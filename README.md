@@ -5,7 +5,7 @@
 ## How to start
 
 1. fork本项目或自己部署好，使用`pip3 install -r requirments.txt`下载依赖 .
-2. 先在'config.yml'文件编辑好后，使用bat脚本运行gocq . 
+2. 先在'config.yml'文件编辑好后，使用`./go-cqhttp`脚本运行gocq . 
 3. 此时在'.env.prod'编写正确，即可文件目录使用 `nb run` .
 4. 发送'丛雨帮助'可以知道功能（但是肯定不是全部哦~杂鱼~❤）
 ## Documentation
